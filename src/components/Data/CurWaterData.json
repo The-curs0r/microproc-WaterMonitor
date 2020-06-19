@@ -1,0 +1,4 @@
+[{"type":"Freshwater","conductivity":92.443,"turbidity":99.748,"oxygen":94.645,"pH":5.0,"temp":34.0},
+{"type":"Sewage Water","conductivity":66.687,"turbidity":89.045,"oxygen":82.25,"pH":10.8,"temp":30.1},
+{"type":"Tap Water","conductivity":30.228,"turbidity":88.186,"oxygen":93.561,"pH":12.2,"temp":27.0},
+{"type":"Drinking Water","conductivity":40.185,"turbidity":68.579,"oxygen":33.158,"pH":9.8,"temp":27.8}]

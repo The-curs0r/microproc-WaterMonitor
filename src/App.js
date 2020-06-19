@@ -1,25 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{useState,useEffect} from 'react';
+import {Button} from 'react-bootstrap'
 import './App.css';
-
+import Water from './components/Water'
 function App() {
+    const [mode,setMode]=useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="wrap">
+        <div className={mode?'App light':'App dark'}>
+            <Button variant="primary" onClick={(e)=>{e.preventDefault();setMode(!mode)}} style={{marginTop:'20px'}}>{(mode)?'Dark Mode':'Light Mode'}</Button>
+            <Water />
+        </div>
+    </div>  
   );
 }
 

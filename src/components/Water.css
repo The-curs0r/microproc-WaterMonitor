@@ -1,0 +1,72 @@
+.profileSubTitle {
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight:400;
+    font-size: 1.7em;
+    line-height: 35px;
+    text-align: left;
+    padding-left: 1%;
+    width:100%;
+    /* background-color: red; */
+    /* color: #000000; */
+
+}
+.defaultLoc{
+    padding-left: auto;
+    padding-right: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.dashboardStatsDiv {
+    width : 80%;
+    margin-left: auto;
+    margin-right:auto ;
+}
+.Wrapper{
+    /* background: black; */
+    margin-right: auto;
+    margin-left: auto;
+    height:90vh;
+    width:80vw;
+}
+.profileSubTitleDiv {
+    border-bottom: 1px  solid;
+    width :80%;
+    /* background-color: blue; */
+    margin :50px auto;
+    text-align: center;
+
+}
+.TeamSubTitleDiv {
+    border-bottom: 1px  solid;
+    width :80%;
+    /* background-color: blue; */
+    margin :50px auto;
+    text-align: center;
+
+}
+#titleDashDiv {
+    text-align : center;
+    width : 80%;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top: 50px;
+    margin-bottom : 50px;
+}
+#welcomeTo {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight:300;
+    font-size: 1.7em;
+}
+
+#adminDash {
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight:400;
+    font-size : 2em;
+
+}
