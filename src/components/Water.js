@@ -46,7 +46,7 @@ export default class Water extends Component {
             var val = -0.1*i+8.9;
             pointspHTemp.push({'temp':i,'ph':val});
         }
-        console.log(pointspHTemp)
+        // console.log(pointspHTemp)
         return pointspHTemp;
     }
     getData = ()=>{
