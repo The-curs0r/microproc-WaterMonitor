@@ -30,6 +30,9 @@
     margin-left: auto;
     height:90vh;
     width:80vw;
+    /* background: blue; */
+    /* overflow-x: scroll; */
+    /* overflow-y: hidden; */
 }
 .profileSubTitleDiv {
     border-bottom: 1px  solid;

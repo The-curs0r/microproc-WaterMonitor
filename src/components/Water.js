@@ -5,7 +5,7 @@ import Col from 'react-bootstrap'
 import {Dropdown,DropdownButton,Button} from 'react-bootstrap'
 
 import Row from 'react-bootstrap'
-import { LineChart, Line , CartesianGrid, XAxis, YAxis,Tooltip,Legend,PieChart,Pie ,Cell,Brush,BarChart,Bar } from 'recharts';
+import { LineChart, Line , CartesianGrid, XAxis, YAxis,Tooltip,Legend,PieChart,Pie ,Cell,Brush,BarChart,Bar,ResponsiveContainer } from 'recharts';
 import './Water.css'
 
 import currentWaterData from './Data/CurWaterData.json'
@@ -90,8 +90,9 @@ export default class Water extends Component {
                             <h1 className="profileSubTitle">30 Days Temperature Stats</h1>
                         </div>
                     </div>
+                    <ResponsiveContainer width = "75%" height={400}>
                         <LineChart
-                                width={1500}
+                                width={750}
                                 height={600}
                                 data={this.getData()}
                                 margin={{
@@ -107,12 +108,13 @@ export default class Water extends Component {
                                 <Line type="monotone" name=" Max Temperature Per Day" dataKey="tempMax" stroke="#8884d8" activeDot={{ r: 8 }} />
                                 <Line type="monotone" name=" Min Temperature Per Day" dataKey="tempMin" stroke="#FFBB28" activeDot={{ r: 8 }} />
                             </LineChart>
-                            
+                            </ResponsiveContainer>
                         <div className="dashboardStatsDiv">
                             <div className="profileSubTitleDiv">
                                 <h1 className="profileSubTitle">30 Days Parameters</h1>
                             </div>
                         </div>
+                        <ResponsiveContainer width = "75%" height={400}>
                         <LineChart
                                 width={1500}
                                 height={600}
@@ -131,11 +133,13 @@ export default class Water extends Component {
                                 <Line type="monotone" name=" pH" dataKey="pH" stroke="#FFBB28" activeDot={{ r: 8 }} />
                                 <Line type="monotone" name=" Turbidity in NTU" dataKey="turbidity" stroke="#0088FE" activeDot={{ r: 8 }} />
                             </LineChart>
+                            </ResponsiveContainer>
                             <div className="dashboardStatsDiv">
                             <div className="profileSubTitleDiv">
                                 <h1 className="profileSubTitle">30 Days Conductivity Stats</h1>
                             </div>
                         </div>
+                        <ResponsiveContainer width = "75%" height={400}>
                         <LineChart
                                 width={1500}
                                 height={600}
@@ -152,6 +156,7 @@ export default class Water extends Component {
                                 <Legend />
                                 <Line type="monotone" name=" Conductivity in µS/cm" dataKey="conductivity" stroke="#8884d8" activeDot={{ r: 8 }} />
                             </LineChart>
+                            </ResponsiveContainer>
                     </div>
                     
                     :
@@ -161,6 +166,7 @@ export default class Water extends Component {
                         <h1 className="profileSubTitle">Current Stats</h1>
                     </div>
                 </div>
+                <ResponsiveContainer width = "75%" height={400}>
                     <BarChart
                         width={1000}
                         height={400}
@@ -180,6 +186,7 @@ export default class Water extends Component {
                         <Bar name="Turbidity" unit=" NTU" dataKey="turbidity" fill="#00C49F" />
                         <Bar name="Oxygen Level" unit=" mg/L" dataKey="oxygen" fill="#FFBB28" />
                     </BarChart>
+                    </ResponsiveContainer>
                     <div className="dashboardStatsDiv">
                     <div className="profileSubTitleDiv">
                         <h1 className="profileSubTitle">Conductivity of Pure Water vs Temperature</h1>
@@ -199,9 +206,8 @@ export default class Water extends Component {
                         <h1 className="profileSubTitle">pH of Water vs Temperature Graph</h1>
                     </div>
                 </div>
+                <ResponsiveContainer width = "75%" height={400}>
                     <LineChart
-                                width={900}
-                                height={600}
                                 data={this.getPoint()}
                                 margin={{
                                 top: 40, right: 30, left: 20, bottom: 50,
@@ -213,6 +219,7 @@ export default class Water extends Component {
                                 <Legend />
                                 <Line type="monotone" name=" pH" dataKey="ph" stroke="#8884d8" />
                             </LineChart>
+                            </ResponsiveContainer>
                     </div>
 
                 }
